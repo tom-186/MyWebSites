@@ -1,5 +1,5 @@
-**/img
-**/fonts
+**/img/
+**/fonts/
 *.log
 *.jpg
 *.png
