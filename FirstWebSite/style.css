@@ -1,0 +1,241 @@
+body, html {
+    margin:0;
+    padding:0;
+    font-size: 16px;
+    color: #000000; /* Colore dei font del sito */
+ }
+
+body{
+    display:flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+.maincontent{flex:1;}
+
+/* INTESTAZIONI */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+color:  rgb(123, 167, 88);
+margin-top: 0;} 
+
+h1{font-size: 60px;}
+
+h2{font-size: 50px;}
+
+h3{font-size: 40px;}
+
+h4{font-size: 30px;}
+        
+h5{font-size: 24px;}
+        
+h6{font-size: 20px;}
+
+/* PULSANTI */
+.btn{
+    background-color: rgba(255, 0, 0, 0.5);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 20px 40px;
+    border-radius: 50px;
+    margin: 20px auto;
+    display: inline-block;
+}
+.btn:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+.btn-small{
+    font-size: 16px;
+}
+.btn-medium{
+    font-size: 20px;
+}
+.btn-large{
+    font-size: 30px;
+}
+
+.btn-primary{
+    background-color: rgba(0, 255, 0, .6);
+}
+
+.btn-primary:hover{
+    background-color: rgba(0, 255, 0, .9);
+}
+
+/* UTILITY */
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto
+}
+
+.img-responsive{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* SPAZIATURE */
+.pl-5{padding-left: 25px;}
+
+/* HEADER */
+#header{
+    background-color: #333333;
+    color: #fff;
+    padding: 20px;
+}
+.logo{
+    float: left;
+    }
+
+.logo a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold
+}
+
+nav.navbar{
+    float: right;
+    }
+
+nav.navbar ul{margin:0}
+
+nav.navbar ul li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+nav.navbar ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px;
+}
+
+nav.navbar ul li a:hover{
+    background-color: rgb(123, 167, 88);
+    color: #ffffff;
+}
+
+/* COVER */
+section.cover{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    background-image: url(images/paesaggio.jpg);
+    background-position: center;
+    background-size: cover;
+    color:#ffffff
+}
+
+.cover h1 {
+    font-size: 70px;
+    font-weight: 900px;
+    text-shadow: 0 0 20px rgba(137, 177, 27, 0.7);
+    color: white;
+}
+
+.cover p {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.cover .btn-primary{
+    background-color: transparent;
+    border-radius: 0;
+    border: 3px solid #ffffff;
+}
+
+.cover .btn-primary:hover{
+    background-color: rgba(255, 255, 255, .3)
+}
+
+/* CARDS */
+section.cards{
+    margin-top: 50px;
+}
+div.card{
+    float: left;
+    width: 48%;
+}
+
+div.card:last-child{padding-left: 25px;}
+
+/* Smartphone */
+@media screen and (max-width: 767px) {
+
+    div.card{
+    float: none;
+    width: 100%;}
+
+    div.card:last-child{
+        width: 90%;
+        padding: 0 5%;
+        margin-top: 30px;
+        text-align: center;
+    }
+   }
+
+/* TABLE */
+table{
+    background-color: #cccccc;
+    border-color: 1px solid #333333;
+}
+
+table tr th{
+    background-color:rgb(123, 167, 88) ;
+    color: #ffffff;
+    font-size: 30px;
+    padding: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+table tr td{
+    font-size: 24 px;
+    padding: 20px;
+}
+
+table tr:nth-child(even){
+    background-color: #eeeeee;
+}
+
+.paragrafi p:last-child {color: red;}
+
+/* FOOTER */
+#footer{
+    background-color: #333333;
+    color: #fff;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+#footer a {color: rgb(123, 167, 88);
+text-decoration: none;}
+
+div.copyright{
+    float: left;
+}
+
+div.policies{
+    float: right;
+}
+
+/* Smartphone */
+@media screen and (max-width: 767px) {
+
+    div.copyright, div.policies {
+        float: none;
+        text-align: center;
+    }
+        
+}

@@ -1,0 +1,168 @@
+/* GENERAL */
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #777777;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+    font-family: 'Lato', sans-serif;
+} 
+
+ul li {
+    margin-bottom: .6rem;
+}
+
+i {
+    color: #70b9b0;
+}
+
+
+/* HEADER */
+nav.navbar{
+    background-color: rgba(45, 103, 96, 1);
+}
+
+/* Desktop */ 
+@media screen and (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+/* HERO */
+
+.carousel-item {position: relative !important;}
+.green-overlay {
+    position: absolute;  
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background:  rgba(112, 185, 176, 0.85);
+}
+
+.carousel-caption {
+    bottom: 40%;
+}
+
+#carouselExampleCaptions h1, #carouselExampleCaptions p {
+    font-weight: 300;
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) { 
+    #carouselExampleCaptions .carousel-item{
+        height: 70vh;
+    }    
+}
+
+/* Smartphone */
+@media screen and (max-width: 767px) {
+    .carousel-caption {
+        bottom: 0;
+    }
+    #carouselExampleCaptions h1{
+        font-size: 1.9rem;
+    }    
+}
+
+
+/* SERVIZI */
+section.servizi {
+    background-color: #f2f9f8;
+}
+
+.servizi h3 {
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.servizi .col-md-4 {
+    margin-bottom: 2rem;
+}
+
+/* CALL TO ACTION */
+section.call-to-action {
+    background-color: rgba(45, 103, 96, 1);
+    color: #fff;
+}
+
+/* FAQ */
+section.faq {
+    background-color: #f2f9f8;
+}
+
+.card {
+    border: none;
+    background-color: transparent;
+}
+
+.card-header {
+    border-bottom: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.card-header .btn {
+    padding: .375rem 0;
+}
+
+
+.card-header .btn-link {
+    color: rgba(112, 185, 176, 0.85);
+}
+
+.card-header .btn-link:hover {
+   text-decoration: none;
+}
+
+.card-header .btn-link.collapsed, .card-header .btn-link.collapsed i {
+    color: #333333;
+}
+
+.card-body {
+    padding: 0 0 1rem;
+} 
+
+/* TEAM */
+section.team h5.card-title {
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+section.team h6.card-ruolo {
+    font-style: italic;
+    font-size: .9em;
+    margin-bottom: 1.2em;
+}    
+
+section.team p.card-text {
+    font-style: italic;
+    color: #999999;
+}
+
+section-team ul {
+    margin-bottom: 0;
+}
+
+section.team a:hover {
+    text-decoration: none;
+}
+
+section.team div.card {
+    box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+}
+
+/* Smartphone */
+@media screen and (max-width: 767px) {
+
+    section.team div.card{
+        margin-bottom: 1.5rem;
+    }
+}
