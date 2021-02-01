@@ -1,3 +1,5 @@
 **/img
 **/fonts
 *.log
+*.jpg
+*.png
