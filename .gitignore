@@ -1,4 +1,3 @@
-**/img/**
-**/fonts/**
+**/img
+**/fonts
 *.log
-icofont.**
